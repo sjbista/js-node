@@ -7,7 +7,7 @@ const connectDb = require("./database.js")
 const schema=require("./schema.js")
 
 const Blog = mongoose.model('Blog', schema);
-const blog = new Blog({title:"democracy day",author:"Ram",body:"32"});
+const blog = new Blog({title:"World",author:"Qweqwe",body:"32"});
     blog.save(function (err,saveblog){
     if (err) response.send({error:err.message});
         console.log(saveblog);
